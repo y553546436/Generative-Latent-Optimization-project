@@ -11,6 +11,11 @@ This is the tensorlayer implementation of the paper Optimizing the Latent Space 
 
 - tensorlayer 2.2.0
 
+## Usage
+Train the GLO:
+
+    $ python train.py
+
 ## Description
 
 Generative Latent Optimization(GLO) is a new framework to train deep convolutional generators using simple reconstruction losses. The success of GANs come from two complementary sources: (A)Leveraging the powerful inductive bias of deep convnets (B)The adversarial training protocol. This paper attempts to disentangle the two factors. So instead of using another deep convolutional network called discriminaters to train the generators, GLO jointly trains the generators and the distribution of the noise space so that the model relies on (A) and avoids (B). GLO gets competitive results compared to GAN, which proves the importance of inductive bias of convnets.
